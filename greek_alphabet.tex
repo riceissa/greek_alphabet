@@ -1,191 +1,228 @@
-\documentclass{article}
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage[margin=2cm]{geometry}
 \usepackage{amsmath}
-\usepackage{tipa}
+\usepackage[all,error]{onlyamsmath}
+\usepackage{fixltx2e}
+\usepackage{tipa} % For the IPA
 \usepackage{ragged2e}
-\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{paralist}
+\usepackage{verbatim}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\newcommand{\stress}[1]{\textsc{#1}}
+
+%\title{The Greek Alphabet for Mathematics and the Sciences}
+%\author{}
+%\date{} % Uncomment and leave this empty to have no date
 
 \begin{document}
+%\maketitle
 \RaggedRight
-\emph{The Greek Alphabet for Mathematics and the Sciences.}
+\emph{The Greek Alphabet for Mathematics and the Sciences}
 
 \begin{tabular}{l p{2.6cm} l p{9cm}}
 %%%%%%%%%% Top Row %%%%%%%%%%
 \textbf{Capital (\LaTeX)}\footnotemark[1] &
 \textbf{Small (\LaTeX)}\footnotemark[1] &
 \textbf{English} &
-\textbf{Pronunciation\footnotemark[2]\ [IPA] (Approximation)}\\
+\textbf{Pronunciation\footnotemark[2]\ [IPA] (Approximation)} \\
+
 %%%%%%%%%% Alpha %%%%%%%%%%
 \(A\) (\verb|A|) &
 \(\alpha\) (\verb|\alpha|) &
 Alpha &
-[\textipa{"\ae lf@}] (\textsc{al}-fuh)\\
+[\textipa{"\ae lf@}] (\stress{al}-fuh) \\
+
 %%%%%%%%%% Beta %%%%%%%%%%
 \(B\) (\verb|B|) &
 \(\beta\) (\verb|\beta|) &
 Beta &
-US: [\textipa{"beIt@}] (\textsc{bey}-tuh);
-UK: [\textipa{"bi:t@}] (\textsc{bee}-tuh)\\
+US: [\textipa{"beIt@}] (\stress{bey}-tuh);
+UK: [\textipa{"bi:t@}] (\stress{bee}-tuh) \\
+
 %%%%%%%%%% Gamma %%%%%%%%%%
 \(\Gamma\) (\verb|\Gamma|) &
 \(\gamma\) (\verb|\gamma|) &
 Gamma &
-[\textipa{"g\ae m@}] (\textsc{gam}-uh)\\
+[\textipa{"g\ae m@}] (\stress{gam}-uh) \\
+
 %%%%%%%%%% Delta %%%%%%%%%%
 \(\Delta\) (\verb|\Delta|) &
 \(\delta\) (\verb|\delta|) &
 Delta &
-[\textipa{"dElt@}] (\textsc{del}-tuh)\\
+[\textipa{"dElt@}] (\stress{del}-tuh) \\
+
 %%%%%%%%%% Epsilon %%%%%%%%%%
 \(E\) (\verb|E|) &
 \(\epsilon\) (\verb|\epsilon|), \(\varepsilon\) (\verb|\varepsilon|) &
 Epsilon &
-[\textipa{"EpsI""l6n}] (\textsc{ep}-sih-lon),
-[\textipa{"Eps@""l6n}] (\textsc{ep}-suh-lon),
-[\textipa{"Eps@""l@n}] (\textsc{ep}-suh-luhn);
-UK: [\textipa{Ep"saIl@n}] (ep-\textsc{sahy}-luhn)\\
+[\textipa{"EpsI""l6n}] (\stress{ep}-sih-lon),
+[\textipa{"Eps@""l6n}] (\stress{ep}-suh-lon),
+[\textipa{"Eps@""l@n}] (\stress{ep}-suh-luhn);
+UK: [\textipa{Ep"saIl@n}] (ep-\stress{sahy}-luhn) \\
+
 %%%%%%%%%% Zeta %%%%%%%%%%
 \(Z\) (\verb|Z|) &
 \(\zeta\) (\verb|\zeta|) &
 Zeta &
-US: [\textipa{"zeIt@}] (\textsc{zey}-tuh);
-UK: [\textipa{"zi:t@}] (\textsc{zee}-tuh)\\
+US: [\textipa{"zeIt@}] (\stress{zey}-tuh);
+UK: [\textipa{"zi:t@}] (\stress{zee}-tuh) \\
+
 %%%%%%%%%% Eta %%%%%%%%%%
 \(H\) (\verb|H|) &
 \(\eta\) (\verb|\eta|) &
 Eta &
-US: [\textipa{"eIt@}] (\textsc{ey}-tuh);
-UK: [\textipa{"i:t@}] (\textsc{ee}-tuh)\\
+US: [\textipa{"eIt@}] (\stress{ey}-tuh);
+UK: [\textipa{"i:t@}] (\stress{ee}-tuh) \\
+
 %%%%%%%%%% Theta %%%%%%%%%%
 \(\Theta\) (\verb|\Theta|) &
 \(\theta\) (\verb|\theta|), \(\vartheta\) (\verb|\vartheta|) &
 Theta &
-US: [\textipa{"TeIt@}] (\textsc{they}-tuh)\footnotemark[3];
-UK: [\textipa{"Ti:t@}] (\textsc{thee}-tuh)\footnotemark[3]\\
+US: [\textipa{"TeIt@}] (\stress{they}-tuh)\footnotemark[3];
+UK: [\textipa{"Ti:t@}] (\stress{thee}-tuh)\footnotemark[3] \\
+
 %%%%%%%%%% Iota %%%%%%%%%%
 \(I\) (\verb|I|) &
 \(\iota\) (\verb|\iota|) &
 Iota &
-US: [\textipa{aI"oUt@}] (ahy-\textsc{ou}-tuh);
-UK: [\textipa{aI"@Ut@}] (ahy-\textsc{uh.u}-tuh)\footnotemark[4]\\
+US: [\textipa{aI"oUt@}] (ahy-\stress{ou}-tuh);
+UK: [\textipa{aI"@Ut@}] (ahy-\stress{uh.u}-tuh)\footnotemark[4] \\
+
 %%%%%%%%%% Kappa %%%%%%%%%%
 \(K\) (\verb|K|) &
 \(\kappa\) (\verb|\kappa|) &
 Kappa &
-[\textipa{"k\ae p@}] (\textsc{kap}-uh)\\
+[\textipa{"k\ae p@}] (\stress{kap}-uh) \\
+
 %%%%%%%%%% Lambda %%%%%%%%%%
 \(\Lambda\) (\verb|\Lambda|) &
 \(\lambda\) (\verb|\lambda|) &
 Lambda &
-[\textipa{"l\ae md@}] (\textsc{lam}-duh)\\
+[\textipa{"l\ae md@}] (\stress{lam}-duh) \\
+
 %%%%%%%%%% Mu %%%%%%%%%%
 \(M\) (\verb|M|) &
 \(\mu\) (\verb|\mu|) &
 Mu &
 [\textipa{mju:}] (myoo),
-[\textipa{mu:}] (moo)\\
+[\textipa{mu:}] (moo) \\
+
 %%%%%%%%%% Nu %%%%%%%%%%
 \(N\) (\verb|N|) &
 \(\nu\) (\verb|\nu|) &
 Nu &
 US: [\textipa{nu:}] (noo);
-UK: [\textipa{nju:}] (nyoo)\\
+UK: [\textipa{nju:}] (nyoo) \\
+
 %%%%%%%%%% Xi %%%%%%%%%%
 \(\Xi\) (\verb|\Xi|) &
 \(\xi\) (\verb|\xi|) &
 Xi &
 [\textipa{zaI}] (zahy),
 [\textipa{saI}] (sahy),
-[\textipa{ksaI}] (ksahy)\\
+[\textipa{ksaI}] (ksahy) \\
+
 %%%%%%%%%% Omicron %%%%%%%%%%
 \(O\) (\verb|O|) &
 \(o\) (\verb|o|) &
 Omicron &
-[\textipa{"6mI""k\*r6n}] (\textsc{om}-ih-kron),
-[\textipa{"oUmI""k\*r6n}] (\textsc{oh}-mih-kron);
-UK: [\textipa{@U"maIk\*r6n}] (uh.u-\textsc{mahy}-kron)\footnotemark[4]\\
+[\textipa{"6mI""k\*r6n}] (\stress{om}-ih-kron),
+[\textipa{"oUmI""k\*r6n}] (\stress{oh}-mih-kron);
+UK: [\textipa{@U"maIk\*r6n}] (uh.u-\stress{mahy}-kron)\footnotemark[4] \\
+
 %%%%%%%%%% Pi %%%%%%%%%%
 \(\Pi\) (\verb|\Pi|) &
 \(\pi\) (\verb|\pi|), \(\varpi\) (\verb|\varpi|) &
 Pi &
-[\textipa{paI}] (pahy)\\
+[\textipa{paI}] (pahy) \\
+
 %%%%%%%%%% Rho %%%%%%%%%%
 \(P\) (\verb|P|) &
 \(\rho\) (\verb|\rho|), \(\varrho\) (\verb|\varrho|) &
 Rho &
 US: [\textipa{\*roU}] (roh);
-UK: [\textipa{\*r@U}] (ruh.u)\footnotemark[4]\\
+UK: [\textipa{\*r@U}] (ruh.u)\footnotemark[4] \\
+
 %%%%%%%%%% Sigma %%%%%%%%%%
 \(\Sigma\) (\verb|\Sigma|) &
 \(\sigma\) (\verb|\sigma|), \(\varsigma\) (\verb|\varsigma|) &
 Sigma &
-[\textipa{"sIgm@}] (\textsc{sig}-muh)\\
+[\textipa{"sIgm@}] (\stress{sig}-muh) \\
+
 %%%%%%%%%% Tau %%%%%%%%%%
 \(T\) (\verb|T|) &
 \(\tau\) (\verb|\tau|) &
 Tau &
 [\textipa{taU}] (tau),
-[\textipa{tO:}] (taw)\\
+[\textipa{tO:}] (taw) \\
+
 %%%%%%%%%% Upsilon %%%%%%%%%%
 \(\Upsilon\) (\verb|\Upsilon|) &
 \(\upsilon\) (\verb|\upsilon|) &
 Upsilon &
-[\textipa{"2psI""l6n}] (\textsc{up}-sih-lon),
-[\textipa{"2ps@""l6n}] (\textsc{up}-suh-lon),
-[\textipa{"@ps@""l6n}] (\textsc{uhp}-suh-lon),
-[\textipa{"UpsI""l6n}] (\textsc{uup}-sih-lon),
-[\textipa{"ju:ps@""l6n}] (\textsc{yoop}-suh-lon),
-[\textipa{"ju:psI""l6n}] (\textsc{yoop}-sih-lon),
-[\textipa{"ju:ps@""l@n}] (\textsc{yoop}-suh-luhn),
-[\textipa{"u:ps@""l6n}] (\textsc{oop}-suh-lon);
-UK: [\textipa{ju:p"saIl@n}] (yoop-\textsc{sahy}-luhn),
-[\textipa{2p"saIl@n}] (up-\textsc{sahy}-luhn)\\
+[\textipa{"2psI""l6n}] (\stress{up}-sih-lon),
+[\textipa{"2ps@""l6n}] (\stress{up}-suh-lon),
+[\textipa{"@ps@""l6n}] (\stress{uhp}-suh-lon),
+[\textipa{"UpsI""l6n}] (\stress{uup}-sih-lon),
+[\textipa{"ju:ps@""l6n}] (\stress{yoop}-suh-lon),
+[\textipa{"ju:psI""l6n}] (\stress{yoop}-sih-lon),
+[\textipa{"ju:ps@""l@n}] (\stress{yoop}-suh-luhn),
+[\textipa{"u:ps@""l6n}] (\stress{oop}-suh-lon);
+UK: [\textipa{ju:p"saIl@n}] (yoop-\stress{sahy}-luhn),
+[\textipa{2p"saIl@n}] (up-\stress{sahy}-luhn) \\
+
 %%%%%%%%%% Phi %%%%%%%%%%
 \(\Phi\) (\verb|\Phi|) &
 \(\phi\) (\verb|\phi|), \(\varphi\) (\verb|\varphi|) &
 Phi &
 [\textipa{faI}] (fahy),
 [\textipa{fi:}] (fee) \\
+
 %%%%%%%%%% Chi %%%%%%%%%%
 \(X\) (\verb|X|) &
 \(\chi\) (\verb|\chi|) &
 Chi &
-[\textipa{kaI}] (kahy)\\
+[\textipa{kaI}] (kahy) \\
+
 %%%%%%%%%% Psi %%%%%%%%%%
 \(\Psi\) (\verb|\Psi|) &
 \(\psi\) (\verb|\psi|) &
 Psi &
 [\textipa{saI}] (sahy),
-[\textipa{psaI}] (psahy)\\
+[\textipa{psaI}] (psahy) \\
+
 %%%%%%%%%% Omega %%%%%%%%%%
 \(\Omega\) (\verb|\Omega|) &
 \(\omega\) (\verb|\omega|) &
 Omega &
-US: [\textipa{oU"meIg@}] (oh-\textsc{mey}-guh),
-[\textipa{oU"mi:g@}] (oh-\textsc{mee}-guh),
-[\textipa{oU"mEg@}] (oh-\textsc{meg}-uh);
-UK: [\textipa{"@UmI""g@}] (\textsc{uh.u}-mig-uh)\footnotemark[4],
-[\textipa{"@UmE""g@}] (\textsc{uh.u}-meg-uh)\footnotemark[4]
+US: [\textipa{oU"meIg@}] (oh-\stress{mey}-guh),
+[\textipa{oU"mi:g@}] (oh-\stress{mee}-guh),
+[\textipa{oU"mEg@}] (oh-\stress{meg}-uh);
+UK: [\textipa{"@UmI""g@}] (\stress{uh.u}-mig-uh)\footnotemark[4],
+[\textipa{"@UmE""g@}] (\stress{uh.u}-meg-uh)\footnotemark[4]
 \end{tabular}
 
 \footnotetext[1]{These symbols only work in the mathematics environment.}
 
 \footnotetext[2]{The pronunciations used in this document were checked for accuracy against
-
-\begin{itemize}
-    \item The entry of each letter on
-    \begin{itemize}
-        \item\href{http://dictionary.reference.com/}{Dictionary.com (Online)},
-        \item\href{http://en.wiktionary.org/wiki/Wiktionary:Main_Page}{Wiktionary (Online)},
-        \item \href{http://en.wikipedia.org/wiki/Main_Page}{Wikipedia (Online)},
-        \item\href{http://www.collinsdictionary.com/dictionary/english}{Collins English Dictionary (Online)},
-        \item \href{http://oxforddictionaries.com/}{Oxford Dictionaries (Online)},
-        \item New Oxford American Dictionary (accessed through Apple's Dictionary software),
-        \item The Merriam-Webster Dictionary (Print),
-    \end{itemize}
-    \item \href{http://en.wikipedia.org/wiki/English_pronunciation_of_Greek_letters}{The Wikipedia entry for ``English pronunciation of Greek letters''}, and
-    \item \url{http://www.valdosta.edu/~cbarnbau/personal/teaching_MISC/greek.htm}.
-\end{itemize}}
+(1) the entry of each letter on
+Dictionary.com (\href{http://dictionary.reference.com/}{Online}),
+Wiktionary (\href{http://en.wiktionary.org/wiki/Wiktionary:Main\_Page}{Online}),
+Wikipedia (\href{http://en.wikipedia.org/wiki/Main\_Page}{Online)},
+Collins English Dictionary (\href{http://www.collinsdictionary.com/dictionary/english}{Online}),
+Oxford Dictionaries (\href{http://oxforddictionaries.com/}{Online}),
+New Oxford American Dictionary (accessed through Apple's Dictionary software),
+The Merriam-Webster Dictionary (Print);
+(2) \href{http://en.wikipedia.org/wiki/English\_pronunciation\_of\_Greek\_letters}{the Wikipedia entry for ``English pronunciation of Greek letters''}; and
+(3) \url{http://www.valdosta.edu/~cbarnbau/personal/teaching\_MISC/greek.htm}.}
 
 \footnotetext[3]{The ``th'' is soft as in the English ``thin'', not as in ``they''.}
 
